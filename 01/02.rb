@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 def trio_adding_upto_2020(array)
   left_pointer = 0
   middle_pointer = 1
@@ -21,7 +19,10 @@ def trio_adding_upto_2020(array)
   nil
 end
 
-input = File.read('input.txt', chomp: true).split("\n").map(&:to_i)
+input = File
+          .read('input.txt', chomp: true)
+          .split("\n")
+          .map(&:to_i)
 
 first, second, third = trio_adding_upto_2020(input)
 

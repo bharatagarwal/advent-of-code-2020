@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # loop through till right pointer reaches end
 # 	return pair if sum is found
 # increment left_pointer and right_pointer by 1
@@ -32,7 +30,10 @@ def pair_adding_upto_2020(array)
   nil
 end
 
-input = File.read('input.txt', chomp: true).split("\n").map(&:to_i)
+input = File
+            .read('input.txt', chomp: true)
+            .split("\n")
+            .map(&:to_i)
 
 # first, second = pair_adding_upto_2020([1721, 979, 366, 299, 675, 1456])
 
